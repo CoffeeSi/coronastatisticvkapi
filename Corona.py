@@ -22,8 +22,7 @@ def mes():
                 text = event.obj.text
                 if text.lower() == "корона":
                     vk.messages.send(peer_id=event.obj.peer_id,
-                                     message="Время " + tt +
-                                             "\n👾Заболевших во всем мире : " + Corona[4].text +
+                                     message="👾Заболевших во всем мире : " + Corona[4].text +
                                              "\n💀Умерших во всем мире : " + Corona[5].text +
                                              "\n❣Выздоровшие во всем мире : " + Corona[6].text,
                                      random_id=0)
@@ -33,7 +32,6 @@ def mes():
 
 while True:
     time.sleep(1)
-    tt = time.strftime("%H:%M:%S")
 
     res = requests.get(url, headers=headers)
     soup = BeautifulSoup(res.content, "html.parser")
