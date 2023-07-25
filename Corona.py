@@ -4,14 +4,14 @@ from vk_api.bot_longpoll import VkBotEventType, VkBotLongPoll
 import requests
 from bs4 import BeautifulSoup
 
-vk_session = vk_api.VkApi(token="ac77486334a745bd6034a4b6a8b5a35cf9a1a0c8cf92ba403821479ec46e525df5e65cf6d2f4401f8a36c")
+vk_session = vk_api.VkApi(token="""VK API TOKEN""")
 
-longpoll = VkBotLongPoll(vk_session, group_id=193573819)
+longpoll = VkBotLongPoll(vk_session, group_id="""GROUP ID VK""")
 vk = vk_session.get_api()
 
 url = "https://www.worldometers.info/coronavirus/"
 headers = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36"}
+    "User-Agent": """USER AGENT"""}
 
 
 def mes():
