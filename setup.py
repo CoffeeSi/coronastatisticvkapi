@@ -1,8 +1,5 @@
 from setuptools import setup, find_packages
 
-with open('README.md', 'r') as f:
-    long_description = f.read()
-
 with open('requirements.txt', 'r') as f:
     requirements = f.read()
 
@@ -10,8 +7,8 @@ setup(
     name="coronastatisticvkapi",
     version="1.0",
     description="Monitoring COVID-19 statistics",
-    package_dir={"":"coronastatisticvkapi"},
-    packages=find_packages(where="coronastatisticvkapi"),
+    package_dir={"":""},
+    packages=find_packages(where=""),
     long_description=long_description,
     url="https://github.com/CoffeeSi/coronastatisticvkapi/",
     author="CoffeeSi",
@@ -19,7 +16,7 @@ setup(
     license="MIT",
     classifiers=[
         "LICENSE :: OSI Approved :: MIT License",
-        "Programming Language :: Python :: 3.11.4",
+        "Programming Language :: Python :: 3.8.2",
         "Operating System :: Windows"
     ],
     install_requires=requirements,
